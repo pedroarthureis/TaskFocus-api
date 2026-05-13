@@ -20,25 +20,15 @@ const AuthScreen = () => {
     e.preventDefault();
     setError('');
 
-    const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
+    // Mock login bypassing backend
+    const mockUser = {
+      id: 1,
+      nome: formData.nome || 'Usuário',
+      email: formData.email || 'usuario@teste.com'
+    };
+    const mockToken = 'mock-jwt-token';
     
-    try {
-      const res = await fetch(`http://localhost:3001${endpoint}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
-      
-      const data = await res.json();
-      
-      if (!res.ok) {
-        throw new Error(data.error || 'Erro de autenticação');
-      }
-      
-      login(data.usuario, data.token);
-    } catch (err) {
-      setError(err.message);
-    }
+    login(mockUser, mockToken);
   };
 
   return (
