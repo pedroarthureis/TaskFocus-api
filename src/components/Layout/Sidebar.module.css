@@ -1,0 +1,205 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+}
+
+.logoIcon {
+  color: var(--primary);
+}
+
+.logo h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.closeBtn {
+  display: flex;
+  padding: 0.25rem;
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.closeBtn:hover {
+  background-color: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .closeBtn {
+    display: none;
+  }
+}
+
+.navSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.navItem:hover {
+  background-color: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+.navItem.active {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.projectsSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projectsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.projectsHeader h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.addBtn {
+  color: var(--text-secondary);
+  padding: 0.25rem;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.addBtn:hover {
+  background-color: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+.addForm {
+  padding: 0 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.addInput {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  transition: all var(--transition-base);
+}
+
+.addInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+.projList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  overflow-y: auto;
+}
+
+.projItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  justify-content: space-between;
+}
+
+.projContent {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+.projName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.deleteProjBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  opacity: 0;
+  transition: all var(--transition-base);
+  padding: 0.2rem;
+  border-radius: var(--radius-md);
+}
+
+.deleteProjBtn:hover {
+  color: var(--danger);
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.projItem:hover .deleteProjBtn {
+  opacity: 1;
+}
+
+.projItem:hover {
+  background-color: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+.projItem.active {
+  background-color: var(--surface-hover);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.projColor {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
