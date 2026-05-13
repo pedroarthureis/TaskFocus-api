@@ -1,16 +1,42 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Sistema de gerenciamento de tarefas desenvolvido para organização pessoal, trabalho e estudos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O projeto permite criar, editar e organizar tarefas com prioridade, datas e status de conclusão, utilizando banco de dados MySQL para persistência das informações.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Criar tarefas
+- Editar tarefas
+- Remover tarefas
+- Definir prioridade
+- Organizar por posição
+- Controle de conclusão
+- Datas automáticas de criação e atualização
+- Persistência em banco MySQL
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologias utilizadas
+
+- Node.js
+- MySQL
+- Express
+- MySQL Workbench
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/9429c3f0-c17c-4471-bedf-5ebd1a0abe4d" width="100%" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/f63795d6-85c7-4f79-b51a-c74638e11566" width="100%" />
+    </td>
+  </tr>
+</table>
+
+</div>
